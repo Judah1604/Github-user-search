@@ -8,7 +8,7 @@ function MainSection({ user, searchUser }) {
 	return (
 		<main>
 			{user.message ? (
-				<p style="text-align: center;">Github user not found</p>
+				"Github user not found"
 			) : (
 				<>
 					<div className="image">
