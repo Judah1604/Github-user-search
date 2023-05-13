@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #01000e;
+    font-family: 'Space Grotesk', sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 700px;
+    color: white;
+}
+
+header {
+    background-color: #000d22;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+header form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ion-icon {
+    font-size: 1.5em;
+    color: rgb(0, 53, 177);
+}
+
+header input {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    margin-left: 15px;
+    color: white;
+    font-size: 0.9em;
+    width: 75%;
+}
+
+header button {
+    font-family: inherit;
+    width: 20%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    background-color: #002e54;
+    color: white;
+}
+
+main {
+    margin-top: 20px;
+    background-color: #000d22;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+main .image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.info {
+    width: 100%;
+}
+
+.info h1 {
+    letter-spacing: 1px;
+}
+
+.info .userLogin {
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #014c8b;
+}
+
+.info .bio {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #a1a1a1;
+}
+
+.info .addInfo {
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    gap: 20%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.info .addInfo p {
+    color: #a1a1a1;
+    opacity: 0.8;
+}
+
+.info .personalInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.info .personalInfo .item {
+    display: flex;
+    align-items: center;
+}
+
+.info .personalInfo ion-icon {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.info .personalInfo p {
+    display: contents;
+    font-size: 0.9em;
+}
+
+.item.unavailable {
+    color: #727272;
+    opacity: 0.9;
+}
