@@ -13,6 +13,12 @@ body {
     height: 100vh;
 }
 
+#root {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
 .card {
     width: 700px;
     color: white;
@@ -137,4 +143,25 @@ main .image img {
 .item.unavailable {
     color: #727272;
     opacity: 0.9;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header input {
+        width: 60%;
+        margin-left: 10px;
+    }
+
+    header button {
+        width: 30%;
+    }
 }
